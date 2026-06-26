@@ -7,46 +7,46 @@
 export const profile = {
   name: "Iheb Nguili",
   roles: [
-    "Cybersecurity Analyst",
-    "IT Auditor",
-    "Pentester",
-    "AI Security Enthusiast",
+    "Cybersecurity & IT Audit Enthusiast",
+    "Zero Trust Architecture Learner",
+    "OSINT Platform Developer",
+    "Full-Stack MERN Developer",
   ],
   location: "Tunis, Tunisie",
   email: "nguiliiheb760@gmail.com",
   github: "https://github.com/iheb-15",
   linkedin: "https://www.linkedin.com/in/iheb-nguili",
   cvPath: "/Iheb_Nguili_CV.pdf",
-  // Remplace par "/avatar.jpg" une fois ta photo ajoutée dans /public
   avatar: "/avatar-placeholder.svg",
   tagline:
-    "Je conçois, j'audite et j'attaque des systèmes — pour mieux les défendre.",
+    "Je construis des solutions sécurisées — du Zero Trust à la stack MERN.",
 };
 
 export const about = {
   paragraphs: [
-    "Étudiant en dernière année de Master Audit et Sécurité Informatique, après une Licence en Informatique de Gestion, je me spécialise dans la sécurisation des systèmes d'information : audit de conformité, tests d'intrusion et surveillance SOC.",
-    "Mon approche est double : comprendre la gouvernance et les référentiels (ISO 27001, EBIOS, MEHARI) pour structurer la sécurité, et maîtriser les outils offensifs (Nmap, Metasploit, Burp Suite) pour la mettre réellement à l'épreuve.",
-    "Je m'intéresse particulièrement à l'apport de l'intelligence artificielle dans la sécurité — analyse de risques automatisée, détection d'anomalies, RAG appliqué à l'audit — un axe que j'explore activement à travers mes projets personnels et mon stage de fin d'études.",
+    "Passionné par la cybersécurité et l'audit informatique, je combine une solide base en développement web MERN avec une montée en compétences active sur les architectures Zero Trust, la gestion des risques et l'intelligence sur les menaces.",
+    "Je me forme aux méthodes MEHARI et eBIOS pour l'analyse de risques, et j'explore les outils PAM, IAM, OpenCTI et WAF pour concevoir des infrastructures résilientes conformes aux standards ISO 27001 et ISO 27005.",
+    "En parallèle, je développe une plateforme OSINT s'appuyant sur l'API NVD pour surveiller les CVEs en temps réel et visualiser les données de threat intelligence.",
   ],
   education: [
     {
       degree: "Master Audit et Sécurité Informatique",
       period: "2024 — 2026",
-      status: "obtenus",
+      status: "Obtenue",
     },
     {
-      degree: "Licence en Informatique de Gestion",
+      degree: "Licence en Économie et Gestion",
       period: "2021 — 2024",
       status: "Obtenue",
     },
   ],
   interests: [
-    "Cybersécurité offensive",
-    "Audit des systèmes d'information",
-    "Pentest",
-    "IA appliquée à la sécurité",
-    "Cloud Computing",
+    "Zero Trust Architecture",
+    "PAM / IAM",
+    "OSINT & Threat Intelligence",
+    "Risk Management (MEHARI / eBIOS)",
+    "ISO 27001 / ISO 27005",
+    "Full-Stack MERN",
   ],
 };
 
@@ -54,32 +54,67 @@ export const skillGroups = [
   {
     id: "cybersecurity",
     title: "Cybersecurity",
-    blurb: "Outils offensifs et défensifs pour l'analyse de vulnérabilités",
-    skills: ["Nmap", "Wireshark", "Metasploit", "Burp Suite", "OWASP Top 10", "Kali Linux"],
+    blurb: "Architectures sécurisées, protection des accès et surveillance des menaces",
+    skills: [
+      "Zero Trust Architecture",
+      "PAM",
+      "IAM",
+      "WAF",
+      "SIEM",
+      "OpenCTI",
+      "OWASP Top 10",
+    ],
   },
   {
     id: "audit",
-    title: "Audit & Governance",
-    blurb: "Référentiels et méthodologies de gestion des risques SI",
-    skills: ["ISO 27001", "ISO 27005", "EBIOS", "MEHARI", "Risk Assessment"],
+    title: "Audit & Risk Management",
+    blurb: "Référentiels de gestion des risques et conformité SI",
+    skills: [
+      "ISO 27001",
+      "ISO 27005",
+      "MEHARI",
+      "eBIOS",
+      "Risk Assessment",
+      "IT Audit",
+    ],
   },
   {
-    id: "cloud",
-    title: "Cloud & Systems",
-    blurb: "Administration d'infrastructures cloud et on-premise",
-    skills: ["Microsoft Azure", "Windows Server", "Linux Administration", "LPIC", "Cisco CCNA"],
+    id: "osint",
+    title: "OSINT & Threat Intel",
+    blurb: "Collecte de renseignements, surveillance CVE et analyse de vulnérabilités",
+    skills: [
+      "OSINT",
+      "NVD API",
+      "CVE Monitoring",
+      "Vulnerability Scanning",
+      "Threat Intelligence",
+    ],
   },
   {
     id: "programming",
-    title: "Programming",
-    blurb: "Développement full-stack pour outiller la sécurité",
-    skills: ["Python", "Java", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB", "SQL"],
+    title: "Programming & Dev",
+    blurb: "Développement full-stack orienté sécurité avec la stack MERN",
+    skills: [
+      "JavaScript",
+      "Python",
+      "Java",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
   },
   {
-    id: "ai",
-    title: "AI & Automation",
-    blurb: "Intelligence artificielle appliquée à l'analyse de sécurité",
-    skills: ["Azure OpenAI", "LangChain", "ChromaDB", "RAG", "Prompt Engineering"],
+    id: "tools",
+    title: "Tools & DevOps",
+    blurb: "Environnements, conteneurisation et contrôle de version",
+    skills: [
+      "Docker",
+      "Git",
+      "Anaconda",
+      "Linux",
+      "Kali Linux",
+    ],
   },
 ];
 
@@ -118,70 +153,131 @@ export const experiences = [
 
 export const projects = [
   {
+    title: "OSINT Platform — CVE Monitor",
+    description:
+      "Plateforme OSINT exploitant l'API NVD pour surveiller les CVEs en temps réel, tracker les vulnérabilités et visualiser les données de threat intelligence.",
+    tags: ["Python", "NVD API", "OSINT", "React.js", "Data Visualization"],
+    github: "https://github.com/iheb-15/osint-cve-monitor",
+    demo: null,
+    video: null,
+    status: "En cours",
+  },
+  {
+    title: "Zero Trust Lab",
+    description:
+      "Maquette d'implémentation d'une architecture Zero Trust avec gestion des accès privilégiés (PAM), IAM et WAF sur un environnement de test conteneurisé avec Docker.",
+    tags: ["Zero Trust", "PAM", "IAM", "WAF", "Docker"],
+    github: "https://github.com/iheb-15/zero-trust-lab",
+    demo: null,
+    video: null,
+    status: "Lab",
+  },
+  {
     title: "SecurAI-Audit",
     description:
-      "Framework d'audit de sécurité piloté par IA. Analyse les politiques de sécurité, identifie les écarts de conformité ISO 27001 et génère des recommandations contextualisées via RAG.",
+      "Framework d'audit de sécurité piloté par IA. Analyse les politiques ISO 27001, identifie les écarts de conformité et génère des recommandations via RAG.",
     tags: ["Azure OpenAI", "ChromaDB", "JWT", "Python", "RAG"],
-    github: "https://github.com/ihebnguili/securai-audit",
+    github: "https://github.com/iheb-15/securai-audit",
     demo: null,
+    video: null,
     status: "Projet PFE",
+  },
+  {
+    title: "Risk Scenarios — MEHARI/eBIOS",
+    description:
+      "Développement de scénarios de risques cybersécurité réalistes selon les méthodes MEHARI et eBIOS, avec rapport d'analyse et plan de traitement des risques.",
+    tags: ["MEHARI", "eBIOS", "ISO 27005", "Risk Management"],
+    github: "https://github.com/iheb-15/risk-scenarios",
+    demo: null,
+    video: null,
+    status: "Recherche",
+  },
+  {
+    title: "MERN Secure App",
+    description:
+      "Application web full-stack MERN avec authentification JWT, gestion des rôles et bonnes pratiques OWASP intégrées dès la conception.",
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "OWASP"],
+    github: "https://github.com/iheb-15/mern-secure-app",
+    demo: null,
+    video: null,
+    status: "Personnel",
   },
   {
     title: "Password Checker",
     description:
       "Outil d'analyse de robustesse des mots de passe avec interface graphique, détection de motifs faibles et estimation du temps de cassage par force brute.",
     tags: ["Python", "Tkinter"],
-    github: "https://github.com/ihebnguili/password-checker",
+    github: "https://github.com/iheb-15/password-checker",
     demo: null,
+    video: null,
     status: "Outil",
-  },
-  {
-    title: "SOC Monitoring Lab",
-    description:
-      "Environnement de laboratoire reproduisant un SOC miniature : centralisation de logs, règles de détection et tableaux de bord de surveillance en temps réel.",
-    tags: ["SIEM", "Log Analysis", "Detection Rules"],
-    github: "https://github.com/ihebnguili/soc-monitoring-lab",
-    demo: null,
-    status: "Lab",
-  },
-  {
-    title: "Web Application Pentest Lab",
-    description:
-      "Laboratoire de tests d'intrusion sur applications web vulnérables, couvrant l'ensemble du Top 10 OWASP avec rapports d'exploitation détaillés.",
-    tags: ["Burp Suite", "OWASP Top 10", "Kali Linux"],
-    github: "https://github.com/ihebnguili/webapp-pentest-lab",
-    demo: null,
-    status: "Lab",
-  },
-  {
-    title: "Active Directory Security Lab",
-    description:
-      "Maquette d'environnement Active Directory pour étudier les vecteurs d'attaque courants (Kerberoasting, Pass-the-Hash) et les contre-mesures associées.",
-    tags: ["Active Directory", "Windows Server", "Metasploit"],
-    github: "https://github.com/ihebnguili/ad-security-lab",
-    demo: null,
-    status: "Lab",
   },
 ];
 
 export const certifications = [
-  { name: "LPIC", issuer: "Linux Professional Institute", status: "Obtenue" },
-  { name: "CCNA", issuer: "Cisco", status: "Obtenue" },
-  { name: "SC-900", issuer: "Microsoft", status: "Obtenue" },
-  { name: "AZ-900", issuer: "Microsoft", status: "Obtenue" },
-  { name: "TryHackMe", issuer: "Plateforme de pentest", status: "Actif" },
-  { name: "Hack The Box", issuer: "Plateforme de pentest", status: "Actif" },
+  { name: "SC-900",   issuer: "Microsoft",                    status: "Obtenue"  },
+  { name: "AZ-900",   issuer: "Microsoft",                    status: "Obtenue"  },
+  { name: "CCNA",     issuer: "Cisco",                        status: "Obtenue"  },
+  { name: "LPIC",     issuer: "Linux Professional Institute", status: "Obtenue"  },
+  { name: "ISO 27001",issuer: "En cours d'acquisition",       status: "En cours" },
+  { name: "ISO 27005",issuer: "En cours d'acquisition",       status: "En cours" },
+  { name: "TryHackMe",issuer: "Plateforme de pentest",        status: "Actif"    },
+  { name: "Hack The Box", issuer: "Plateforme de pentest",    status: "Actif"    },
 ];
 
-export const githubUsername = "ihebnguili";
+export const githubUsername = "iheb-15";
+
+export const tryhackme = {
+  username: "ihebnguili",
+  profileUrl: "https://tryhackme.com/p/ihebnguili",
+};
+
+export const labs = [
+  {
+    name: "OWASP Top 10",
+    category: "Web Application Security",
+    difficulty: "Easy",
+    skills: ["SQLi", "XSS", "IDOR", "XXE"],
+  },
+  {
+    name: "Blue",
+    category: "Windows Exploitation",
+    difficulty: "Easy",
+    skills: ["EternalBlue", "Metasploit", "Post-exploitation"],
+  },
+  {
+    name: "Mr Robot CTF",
+    category: "CTF",
+    difficulty: "Medium",
+    skills: ["Brute Force", "WordPress", "Privilege Escalation"],
+  },
+  {
+    name: "Nmap",
+    category: "Network Scanning",
+    difficulty: "Easy",
+    skills: ["Nmap", "Port Scan", "Service Detection"],
+  },
+  {
+    name: "Pickle Rick",
+    category: "CTF",
+    difficulty: "Easy",
+    skills: ["Web", "Command Injection", "Linux"],
+  },
+  {
+    name: "Advent of Cyber",
+    category: "Multi-domaines",
+    difficulty: "Easy",
+    skills: ["Web", "Network", "OSINT", "Linux"],
+  },
+];
 
 export const nav = [
-  { label: "Accueil", href: "#home" },
-  { label: "À propos", href: "#about" },
-  { label: "Compétences", href: "#skills" },
-  { label: "Expérience", href: "#experience" },
-  { label: "Projets", href: "#projects" },
-  { label: "Certifications", href: "#certifications" },
-  { label: "GitHub", href: "#github" },
-  { label: "Contact", href: "#contact" },
+  { label: "Accueil",       href: "#home"           },
+  { label: "À propos",      href: "#about"          },
+  { label: "Compétences",   href: "#skills"         },
+  { label: "Expérience",    href: "#experience"     },
+  { label: "Projets",       href: "#projects"       },
+  { label: "Certifications",href: "#certifications" },
+  { label: "GitHub",        href: "#github"         },
+  { label: "Contact",       href: "#contact"        },
 ];
